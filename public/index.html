@@ -8,7 +8,10 @@
   <body>
     <h1>chat app using sockets</h1>
 
-    <button id="btn">Press to emit the event</button>
+    <input type="text" placeholder="enter message here" id="newmsg" />
+    <button id="btn">send</button>
+
+    <ul id="msglist"></ul>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
