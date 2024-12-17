@@ -14,6 +14,8 @@ io.on("connection", (socket) => {
   socket.on("msg_sent", (data) => {
     console.log(data);
     io.emit("msg_rcvd", data);
+    // socket.emit("msg_rcvd", data);
+    // socket.broadcast.emit("msg_rcvd", data);
   });
 });
 
